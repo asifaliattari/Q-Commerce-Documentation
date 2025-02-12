@@ -1,0 +1,147 @@
+FoodTuck Website Testing Report
+Prepared By: Asif Ali
+
+Overview
+
+"This report provides a comprehensive analysis of the testing process, error handling, and backend enhancements for the FoodTuck Q-Commerce marketplace. The primary objective was to ensure the platform?s functionality, responsiveness, and reliability while adhering to industry-standard testing practices."
+
+Test Cases and Results
+
+1. Product Listing Page Validation
+
+Test Case ID: TC001
+Steps: Navigate to the products page and verify product display.
+Expected Result: Products should load correctly.
+Actual Result: Products displayed as expected.
+Severity Level: Low
+Remarks: No issues found.
+
+2. API Error Handling
+
+Test Case ID: TC002
+Steps: Disconnect the API and refresh the page.
+Expected Result: An error message should appear.
+Actual Result: Error message displayed correctly.
+Severity Level: Low
+Remarks: Handled efficiently.
+
+3. Cart Functionality
+
+Test Case ID: TC003
+Steps: Add items to the cart and navigate to the cart page.
+Expected Result: Added products should appear in the cart.
+Actual Result: Products displayed correctly.
+Severity Level: Medium
+Remarks: Functions as expected.
+
+4. Mobile Responsiveness
+
+Test Case ID: TC004
+Steps: Test the website using mobile device simulation.
+Expected Result: Content should dynamically adjust to screen size.
+Actual Result: Responsive design confirmed.
+Severity Level: Medium
+Remarks: No issues detected.
+
+5. Search Bar Validation
+
+Test Case ID: TC005
+Steps: Search for non-existent items.
+"Expected Result: A ""No products found"" message should be displayed."
+Actual Result: No message appeared.
+Severity Level: High
+Remarks: Requires immediate fixing.
+
+6. Dynamic Product Detail Pages
+
+Test Case ID: TC006
+Steps: Click on a product card and verify the correct detail page opens.
+Expected Result: The product details page should display the correct information.
+Actual Result: Works as intended.
+Severity Level: Low
+Remarks: No issues found.
+
+7. Cross-Browser Compatibility
+
+Test Case ID: TC007
+"Steps: Open the website in Chrome, Firefox, and Edge."
+Expected Result: Consistent layout and functionality across browsers.
+Actual Result: No compatibility issues found.
+Severity Level: Low
+Remarks: Fully functional across all tested browsers.
+
+Performance Optimization
+
+"Tools Used: Lighthouse, GTmetrix"
+
+Optimization Steps:
+
+1. Compressed images using TinyPNG.
+2. Implemented lazy loading for assets.
+3. Minimized unused CSS and JavaScript.
+4. Enabled browser caching for faster page loads.
+
+Results:
+
+Initial page load time reduced to under 2 seconds.
+Lighthouse performance score improved to 95/100.
+
+Error Handling
+
+API Failures: Managed using try-catch blocks.
+"Fallback UI: Displayed user-friendly messages like ""No products available."""
+
+Example Implementation:
+
+try {
+    const data = await fetchProducts();
+    setProducts(data);
+} catch (error) {
+"    console.error(""Failed to fetch products:"", error);"
+"    setError(""Unable to load products. Please try again later."");"
+}
+
+Cross-Browser and Device Testing
+
+"Browsers Tested: Chrome, Firefox, Safari, Edge."
+"Devices Tested: Desktop, tablet, iPhone 12."
+
+Results:
+
+Fully responsive across all tested devices and browsers.
+No layout inconsistencies detected.
+
+Security Measures
+
+Input Validation: Prevents injection attacks.
+Secure Communication: HTTPS enabled.
+API Security: Keys stored securely in environment variables.
+"Tools Used: OWASP ZAP, Burp Suite."
+
+Challenges and Resolutions
+
+"1. Search bar failure: The ""No products found"" message did not appear."
+
+
+Resolution: Scheduled for fixing in the next sprint.
+
+2. Performance bottlenecks due to large images.
+
+
+Resolution: Successfully optimized image sizes.
+
+Conclusion
+
+"The FoodTuck website has successfully met most functional and non-functional testing criteria. The primary concern remains the search bar issue, which requires resolution before deployment. Overall, the platform is well-optimized for performance, responsiveness, and security, making it suitable for real-world use after the necessary fixes."
+
+Next Steps
+
+1. Fix the search bar dropdown issue.
+2. Conduct additional User Acceptance Testing (UAT).
+3. Re-test after implementing the fixes.
+
+Attachments
+
+CSV-based testing report.
+Lighthouse and GTmetrix audit logs.
+Security testing summary report.
