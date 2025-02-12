@@ -1,0 +1,14 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Severity Level,Assigned To,Remarks
+TC001,Validate Product Listing Page,Open Products Page > Validate Products,Products should display successfully,Products displayed successfully,Low,-,No issue found
+TC002,Test API Error Handling,Disconnect API > Refresh Page,Error message should appear,Error message displayed correctly,Low,-,Handled gracefully
+TC003,Check Cart Functionality,Add items to cart > Navigate to cart,Items should appear in the cart,Items displayed correctly in the cart,Medium,-,Functioning properly
+TC004,Ensure Mobile Responsiveness,Inspect > Device Toolbar > Select Mobile Device,Content should adjust dynamically,Content adjusted correctly,Medium,-,Responsive
+TC005,Validate Search Bar Functionality,Search for unavailable items,"""No products found"" dropdown should appear",Dropdown not appearing,High,-,Requires fix
+TC006,Validate Dynamic Product Details Page,Click on any product card,Correct product details should load,Product details displayed correctly,Low,-,Successfully tested
+TC007,Cross-Browser Compatibility,"Open website on Chrome, Firefox, Safari, Edge",Should work consistently across all browsers,No compatibility issues found,Low,-,Successfully tested
+,,,,,,,
+Key Improvements:,,,,,,,
+,,,,,,,
+"1. Consistent Terminology: Standardized phrasing like ""display successfully"" and ""error message displayed.""",,,,,,,
+"2. Corrected Typos: Fixed words like ""Meduim"" to ""Medium"" and ""irrelevent"" to ""irrelevant.""",,,,,,,
+3. Better Readability: Improved test case descriptions and steps for clarity.,,,,,,,
